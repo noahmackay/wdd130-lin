@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #ffffff;   
+    --color-secondary: #000000; 
+    --color-accent1: #19150f;   
+    --color-accent2: #93908b;   
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +13,8 @@
 
 body {
     font-family: 'Raleway', Arial, sans-serif;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
     max-width: 1400px;
     text-align: center;
     margin: auto;
@@ -78,15 +85,15 @@ main {
 
 h1, h2, h3 {
     font-family: 'DM Serif Display', serif;
-    color: #000000;
+    color: var(--color-secondary);
     margin-bottom: 15px;
 }
 
 .button1 {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #19150f;
-    color: #ffffff;
+    background-color: var(--color-accent1);
+    color: var(--color-primary);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -98,8 +105,12 @@ header {
     max-width: auto ;
     margin: 0 auto;
     padding: 20px 20px; 
-    background-color: #000000;
-    border-bottom: 1px solid #93908b;
+    background-color: var(--color-secondary);
+    border-bottom: 1px solid var(--color-accent2);
+}
+
+nav a {
+    color: var(--color-primary);
 }
 
 nav a {
@@ -173,8 +184,8 @@ img {
 
 footer {
     padding: 30px 20px;
-    background-color: #19150f;
-    color: #ffffff;
+    background-color: var(--color-accent1);
+    color: var(--color-primary);
     margin-top: 40px;
     display: flex;
     flex-direction: column;  
@@ -199,14 +210,14 @@ footer {
 }
 
 .footer-nav a {
-    color: #ffffff;
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 600;
 }
 
 footer p {
     font-size: 0.9em;
-    color: #93908b;
+    color: var(--color-accent2);
     margin: 0;
     text-align: center;
 }
